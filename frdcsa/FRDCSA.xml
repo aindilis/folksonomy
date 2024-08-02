@@ -41,9 +41,9 @@
   </short-description>
   <medium-description>
     Folksonomy is a tool for classifying software according to various
-    "folksonomies", which is a (possibly condescending) word for
-    things like the Sourceforge classification scheme, the debtags
-    systems, and the Freshmeat classification system.
+    "folksonomies", which is a term for things like the Sourceforge 
+    classification scheme, the debtags systems, and the Freshmeat 
+    classification system.
     <!-- Similar to extended description for Debian.
 	 
 	 QUOTED FROM DEBIAN POLICY
