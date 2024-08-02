@@ -1,0 +1,208 @@
+#!/usr/bin/perl -w
+
+use BOSS::Config;
+use PerlLib::MySQL;
+use Data::Dumper;
+
+my $specification = "
+	help			print help information.
+	update			updates the package tag database (requires root).
+	selfcheck		perform a series of internal self checks using the current tag data.
+	check			check that all the tags in the given tagged collection are present in the tag vocabulary.  Checks the main database if no file is specified.
+	run <id>		print run information.
+	runs			print run information.
+	tagcat			output the tag vocabulary.
+	tagshow <tag>		show the vocabulary informations about a tag.
+	tagsearch <search>	show a summary of all tags whose data contains the given strings.
+	show <package>		show informations about a package, like apt-cache show does, but adding the tag informations from the debtags index.
+	related	<packages>...	show packages related to the given one(s).
+	cat			output the full package tag database.
+	dumpavail		output the full package database.
+	search <expr>		output the names and descriptions of the packages that match the given tag expression.
+	grep <expr>		output the lines of the full package tag database that match the given tag expression.
+	install <expr>		apt-get install the packages that match the given tag expression.
+	diff			create a tag patch between the current tag database and the tag collection [filename].  Standard input is used if filename is not specified.  May
+	maintainers		create a tagged collection of maintainers and the tags of the packages they maintain.
+	tag <package>		view and edit the tags for a package.
+	submit			mail the given patch file to the central tag repository.If [patch] is omitted, mail the local tag modifications..
+	todo			print a list of the installed packages that are not yet tagged.
+	score			score uninstalled packages according to how often their tags appear in the packages that are installed already.
+	stats			print statistics about Debtags.
+	smartsearch		Perform a keyword search integrated with related packages.
+	vocfilter		filter out the tags that are not found in the given vocabulary file.
+";
+
+my $config = BOSS::Config->new
+  (Spec => $specification,
+   ConfFile => "");
+my $conf = $config->CLIConfig;
+my $mysql = PerlLib::MySQL->new
+  (DBName => "folksonomy2");
+my $data = {};
+my $items = {};
+
+my $runid;
+if (exists $conf->{'run'}) {
+  $runid = $conf->{'run'};
+}
+
+if (exists $conf->{'runs'}) {
+  $statement = "select * from runs";
+  my $res = $mysql->Do
+    (Statement => $statement);
+  print Dumper($res);
+}
+
+if (exists $conf->{'tagsearch'}) {
+  my $search = $conf->{'tagsearch'};
+  if ($search) {
+    my $statement;
+    if ($search eq ".") {
+      $statement = "select * from tags";
+    } else {
+      $statement = "select * from tags where Tag like '%$search%'";
+    }
+    my $res = $mysql->Do
+      (Statement => $statement);
+    foreach my $key (keys %$res) {
+      push @list, $res->{$key}->{Tag};
+    }
+    print join("\n", sort @list)."\n";
+  }
+}
+
+if (exists $conf->{'show'}) {
+  # select distinct debtags_tags.Tag from debtags_tags,systems,debtags where systems.Name="amarok" and debtags.SystemID=systems.ID and debtags_tags.ID=debtags.TagID order by debtags_tags.Tag;
+  # select distinct debtags_tags.Tag from debtags_tags left join debtags on debtags_tags.ID=debtags.TagID left join systems on debtags.SystemID = systems.ID where systems.Name = "amarok" order by debtags_tags.Tag;
+  # select systems.ID,debtags_tags.Tag from debtags_tags left join debtags on debtags_tags.ID=debtags.TagID left join systems on debtags.SystemID = systems.ID where systems.Name = "amarok" order by systems.ID, debtags_tags.Tag;
+  my $package = $conf->{'show'};
+  my $quotedpackage = $mysql->Quote($package);
+  if ($package) {
+    my $statement = "select * from names where Name=$quotedpackage";
+    my $res = $mysql->Do
+      (Statement => $statement);
+    foreach my $key (keys %$res) {
+      # look up the tags associated with this program
+      my $statement2 = "select * from entries where NameID = $key and RunID = $runid";
+      my $res2 = $mysql->Do
+	(Statement => $statement2);
+      my @list;
+      foreach my $key2 (keys %$res2) {
+	my $tagid = $res2->{$key2}->{TagID};
+	if ($tagid) {
+	  push @list, GetTagFromTagID($tagid);
+	}
+      }
+      print Dumper($res->{$key});
+      print join(", ", sort @list)."\n";
+    }
+  }
+}
+
+if (exists $conf->{'search'}) {
+  my $expr = $conf->{'search'};
+  if ($expr) {
+    # OldSearch($expr);
+    # now develop the new search, for each tag, return the list of items matching that tag
+    my @thing = $expr =~ /([^:\w-]*)([:\w-]*)([^:\w-]*)/g;
+    my $variables = {};
+    my $tags = {};
+    my $nameids = {};
+    my $results = {};
+    my @res;
+    foreach my $thin (@thing) {
+      if ($thin =~ /^[:\w-]+$/) {
+	my $tagid = GetTagIDFromTag($thin);
+	if (! $tagid) {
+	  $tagid = "-1";
+	}
+	my $res = $mysql->Do
+	  (Statement => "select ID,NameID from entries where TagID=$tagid and RunID=$runid");
+	foreach my $key (keys %$res) {
+	  my $nameid = $res->{$key}->{NameID};
+	  $nameids->{$nameid} = 1;
+	  $variables->{$tagid}->{$nameid} = 1;
+	}
+	push @res, "(exists \$variables->{$tagid}->{\$nameid})";
+      } else {
+	push @res, $thin;
+      }
+    }
+    my $translatedexpression = join("",@res);
+    @res = ();
+    # now parse the statement
+    # okay so here is how we interpret it, now that we have the items for it
+    # we iterate over the union of all the items, generating a statement that 
+    # print $translatedexpression."\n";
+    foreach my $nameid (keys %$nameids) {
+      # evaluate this statement
+      if (eval $translatedexpression) {
+	push @res, $nameid;
+      }
+    }
+    if (@res) {
+      my @res2 = @res;
+      my $all;
+      while (@res2) {
+	my @res3 = splice @res2,0,500;
+	my $statement = "select * from names where ".join(" or ", map {"ID='$_'"} @res3);
+	# print $statement."\n";
+	my $res2 = $mysql->Do(Statement => $statement);
+	foreach my $key (keys %$res2) {
+	  $all->{$key} = $res2->{$key};
+	}
+      }
+      foreach my $nameid (sort {$all->{$a}->{Name} cmp $all->{$b}->{Name}} @res) {
+	my $name = $all->{$nameid}->{Name};
+	$name =~ s/^\s*//;
+	$name =~ s/\s*$//;
+	print $name."\t- ".$nameid."\t- ".$all->{$nameid}->{ShortDesc}."\n";
+      }
+    }
+  }
+}
+
+# mysql> select * from debtags where NameID='350000';
+# +-------+----------+-------+
+# | ID    | NameID | TagID |
+# +-------+----------+-------+
+# | 91349 |   350000 |   450 | 
+# | 91350 |   350000 |   425 | 
+# | 91351 |   350000 |   437 | 
+# | 91352 |   350000 |   427 | 
+# +-------+----------+-------+
+# 4 rows in set (0.24 sec)
+
+# select names.ID,names.Name from names left join debtags on debtags.NameID = names.ID left join debtags as debtags2 using (NameID) where debtags.TagID=450 and debtags2.TagID=425;
+
+# SELECT a.NameID from debtags a JOIN debtags b ON a.NameID = b.NameID WHERE ( a.TagID = 450 AND b.TagID = 425 );
+
+# select distinct NameID from debtags where TagID=425 and NameID in (select NameID from debtags where TagID=450);
+
+sub GetTagIDFromTag {
+  my $tag = shift;
+  my $quotedtag = $mysql->Quote($tag);
+  if (! exists $data->{TagIDFromTag}->{$tag}) {
+    my $res = $mysql->Do
+      (Statement => "select * from tags where Tag=$quotedtag");
+    if (keys %$res) {
+      foreach my $key (keys %$res) {
+	$data->{TagIDFromTag}->{$tag} = $key;
+	$data->{iTagIDFromTag}->{$key} = $tag;
+      }
+    }
+  }
+  return $data->{TagIDFromTag}->{$tag};
+}
+
+sub GetTagFromTagID {
+  my $tagid = shift;
+  if (! exists $data->{iTagIDFromTag}->{$tagid}) {
+    my $statement = "select * from tags where ID='$tagid'";
+    my $res = $mysql->Do
+      (Statement => $statement);
+    $data->{TagIDFromTag}->{$res->{$tagid}->{Tag}} = $tagid;
+    $data->{iTagIDFromTag}->{$tagid} = $res->{$tagid}->{Tag};
+  }
+  return $data->{iTagIDFromTag}->{$tagid};
+}

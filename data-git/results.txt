@@ -1,0 +1,2415 @@
+211
+
+3d-model-library
+
+3d-scene-reconstruction
+	role::program
+
+3t-frdcsa
+
+ab-testing
+
+abstract-city-resource-collector
+	scope::utility
+	role::program
+
+academician
+	role::program
+
+acewiki-extensions
+	role::program
+	interface::commandline
+
+acl-frdcsa
+
+action-extraction
+	role::program
+
+action-planner
+	role::program
+
+action-system
+	role::program
+
+adulting-system
+	works-with::db
+	scope::utility
+	role::program
+	implemented-in::c
+
+advanced-ttyplay
+	role::program
+
+affordance-interface
+	role::program
+
+afs-frdcsa
+	interface::commandline
+	scope::utility
+	role::program
+
+agent
+	scope::utility
+	role::program
+
+agent-attempts
+
+agent-smith
+	role::program
+
+ai
+	role::program
+
+aie
+	role::program
+
+aigame
+	role::program
+
+aigo
+
+aintrans
+	role::program
+
+aisperger
+	role::program
+
+akahige
+	x11::application
+	uitoolkit::qt
+	implemented-in::c
+	role::program
+
+alexa-integration
+	role::program
+
+algernon
+	role::program
+	interface::commandline
+
+all
+	implemented-in::c
+	role::program
+	devel::interpreter
+	scope::utility
+	interface::x11
+	interface::shell
+
+alleyoop
+	implemented-in::c
+	role::program
+
+am-frdcsa
+	interface::commandline
+	role::program
+
+analysis-engine
+	role::program
+	scope::utility
+	interface::commandline
+
+analytic-environment
+	role::program
+
+android
+
+android-frdcsa-client
+	role::program
+
+anomaly-detection
+	interface::commandline
+	role::program
+
+ansible
+	role::program
+
+antispam-console
+	interface::commandline
+	interface::x11
+	scope::utility
+	role::program
+	implemented-in::c
+
+antispam-node
+	role::program
+
+aop-swipl
+	interface::commandline
+	scope::utility
+	role::program
+
+apartment-finder
+	role::program
+
+api-learner
+	scope::utility
+
+api-manager
+
+apt
+	role::program
+
+architect
+	interface::commandline
+	x11::application
+	works-with::software:source
+	scope::utility
+	role::program
+
+archives-manager
+
+argument-system
+	role::program
+
+arxiv-spider
+	role::program
+
+assess
+	role::program
+
+asset-identification-and-inventorying
+	role::program
+
+assumption-junction
+	role::program
+
+atreides
+	role::program
+	interface::commandline
+
+attempts
+	role::program
+
+audience
+	filetransfer::smb
+	role::program
+	protocol::{irc,jabber,msn-messenger,oscar,yahoo-messenger}
+	scope::utility
+	suite::samba
+	devel::debugger
+	devel::{compiler,debugger,interpreter,lang:lisp,library}
+
+audience-message-handler
+	role::program
+
+auto-builder
+	scope::utility
+	role::program
+
+auto-cyc-wrapper
+	interface::commandline
+	role::program
+
+auto-debug
+	scope::utility
+	role::program
+
+auto-packager
+	role::program
+
+auto-paperwork
+
+automated-legacy-testing
+	scope::utility
+	role::program
+	interface::commandline
+
+automated-vulnerability-testing
+	role::program
+
+backup-manager
+	scope::utility
+	role::program
+
+bard
+	role::program
+	scope::utility
+
+bash-alias-generator
+	implemented-in::c
+
+behavior-trees
+	role::program
+
+better-locate
+	role::program
+
+bill-tracking-system
+	role::program
+
+biometrics
+	role::program
+
+blackarch-frdcsa
+
+bleaf
+	role::program
+
+bluetooth-support
+	role::program
+	scope::utility
+	interface::commandline
+
+bluetooth-tools
+
+bookmark-clustering
+	role::program
+
+bookmark-clustering-old
+	role::program
+
+bootstrapping-minority-language-resources
+	role::program
+
+boss
+	interface::commandline
+	devel::buildtools
+	implemented-in::shell
+	scope::utility
+	implemented-in::c
+	role::program
+
+boycott-manager
+
+brainleach
+	devel::{doc,lang:java,library,runtime}
+	scope::utility
+	role::program
+	devel::{doc,lang:c,lang:c++}
+	protocol::{ipv6,smtp,ssl}
+	mail::{delivery-agent,smtp,transport-agent}
+	devel::{editor,lang:c,lang:c++,lang:java,lang:perl}
+	devel::debugger
+
+brainstorm
+
+broker
+	interface::commandline
+	role::program
+
+broker-buy-sell-system
+	interface::commandline
+	role::app-data
+	scope::utility
+
+budget-system
+	role::program
+
+busroute
+	role::program
+	scope::utility
+	interface::daemon
+	interface::commandline
+
+bytelibrary
+	role::program
+
+calculemus-frdcsa
+	devel::doc
+	implemented-in::c++
+	scope::application
+	interface::x11
+	x11::application
+
+canvasser
+	role::program
+	scope::utility
+	interface::commandline
+
+car-maintenance
+	role::program
+
+cash-tracker
+	interface::x11
+	role::program
+
+cause-effect
+	role::program
+	scope::utility
+
+ccpp
+	role::program
+	interface::commandline
+
+cfo
+	role::program
+	network::client
+	interface::commandline
+
+chap
+	interface::commandline
+	role::program
+
+chap2
+
+cicm-2020
+	role::program
+
+cicm-2021
+
+classify
+
+clear
+	devel::{interpreter,lang:lisp,library}
+	use::{organizing,searching,storing}
+	web::appserver
+	devel::{compiler,debugger,interpreter,lang:lisp,library}
+	devel::{editor,lang:c,lang:c++,lang:java,lang:perl}
+	protocol::{ipv6,smtp,ssl}
+	devel::{debugger,interpreter,lang:lisp,runtime}
+	mail::{delivery-agent,smtp,transport-agent}
+	scope::utility
+	devel::{doc,lang:java,library,runtime}
+	role::program
+
+clg-plus-frdcsa
+
+climate-change-adaptation
+	role::program
+
+clo
+	role::program
+
+cluedo
+	interface::commandline
+	scope::utility
+	role::program
+
+cmu-ai-repository-frdcsa
+
+coauthor
+	role::program
+	scope::utility
+	devel::{doc,lang:java,library,runtime}
+	protocol::{irc,jabber,msn-messenger,oscar,yahoo-messenger}
+	devel::{doc,examples,interpreter,lang:c}
+	devel::{compiler,debugger,interpreter,lang:lisp,library}
+	role::{documentation,dummy,metapackage}
+	use::converting
+	interface::commandline
+	devel::{interpreter,lang:lisp,library}
+
+coauthor-interactive-natural-language-generator
+	role::plugin
+	implemented-in::perl
+
+code-language
+	role::program
+
+code-maturity-detection
+	role::program
+
+code-metrics
+	scope::utility
+	role::program
+	interface::commandline
+
+code-monkey
+	role::program
+
+code-search
+	role::plugin
+	use::editing
+
+cogbot-frdcsa
+
+columcille
+
+command-reference
+	scope::utility
+	role::program
+	implemented-in::c
+	implemented-in::c++
+	interface::commandline
+	scope::application
+	uitoolkit::ncurses
+
+commune
+	role::program
+
+communicator
+	role::program
+
+component-systems
+	role::program
+
+comprehensive-ontologies
+	role::program
+
+computational-autism
+	role::program
+
+computational-ethicist
+
+configurator
+	role::program
+
+conspiracy-theorist
+	role::program
+
+consultant-support
+	interface::commandline
+	role::program
+	suite::emacs
+
+continuity-manager
+
+cooperative-game-archive
+	interface::x11
+	use::gameplaying
+
+corpus
+	role::program
+
+corpus-manager
+	role::program
+	interface::commandline
+
+covid-19
+	role::program
+	scope::utility
+	interface::commandline
+
+cpan-release-manager
+	role::program
+	scope::utility
+
+crawler
+	protocol::http
+	interface::commandline
+	role::program
+	scope::utility
+
+critic
+	devel::library
+	interface::commandline
+
+critic-browser
+	use::editing
+	role::program
+
+critic2
+	devel::library
+	interface::commandline
+
+critic3
+	suite::emacs
+	implemented-in::lisp
+
+crm
+	role::program
+
+crowdsource-everything
+	role::program
+
+csa
+	role::program
+
+cso
+	devel::{i18n,runtime,testing-qa}
+	devel::{ide,rcs,testing-qa}
+	uitoolkit::wxwindows
+	use::{editing,organizing,searching}
+	devel::{compiler,debugger,interpreter,lang:lisp,library}
+	interface::svga
+	culture::portuguese
+	admin::{cluster,configuring,file-distribution,filesystem,monitoring}
+	devel::{examples,lang:lisp,library,ui-builder}
+	role::{documentation,dummy,metapackage}
+	protocol::{ipv6,smtp,ssl}
+	scope::suite
+	devel::{debugger,interpreter,lang:lisp,runtime}
+	accessibility::screen-magnify
+	mail::{delivery-agent,smtp,transport-agent}
+	filetransfer::sftp
+	suite::samba
+	devel::{ide,lang:ocaml,library}
+	devel::{editor,lang:c,lang:c++,lang:java,lang:perl}
+	suite::openoffice
+	works-with::{file,mail,pim}
+	devel::{code-generator,lang:c,lang:c++,lang:haskell,lang:java}
+	devel::{docsystem,lang:c,lang:c++,lang:java}
+	sound::recorder
+	devel::{debugger,editor,ide,lang:python,lang:ruby}
+	devel::{ide,interpreter,lang:scheme}
+	culture::{dutch,french,spanish,swedish}
+	web::appserver
+	use::{downloading,storing,synchronizing}
+	use::{converting,downloading,organizing}
+	implemented-in::python
+	devel::{code-generator,interpreter,lang:c}
+	devel::{interpreter,library,runtime}
+	devel::{lang:c,lang:c++,testing-qa}
+	works-with-format::{iso9660,mp3,oggvorbis}
+	use::{organizing,searching,storing}
+	made-of::{data:html,data:info,data:postscript}
+	devel::{code-generator,lang:c++,lang:java}
+	admin::{filesystem,hardware,kernel}
+	mail::{imap,pop,user-agent}
+	use::{converting,searching,viewing}
+	use::{downloading,proxying,storing}
+	devel::lang:lua
+	role::program
+	use::{checking,editing,synchronizing}
+	admin::{filesystem,kernel,monitoring}
+	works-with-format::oggvorbis
+	implemented-in::{c,c++,python}
+	implemented-in::c
+	admin::accounting
+	devel::{lang:c,lang:c++,profiler}
+	devel::{compiler,interpreter,lang:scheme}
+	protocol::{ftp,sftp,ssl}
+	mail::{pop,smtp,user-agent}
+	filetransfer::smb
+	protocol::{http,ldap,webdav}
+	role::{devel-lib,program,shared-lib}
+	works-with-format::{html,xml,xml:rss}
+	culture::{chinese,greek,japanese}
+	works-with-format::{bib,html,tex}
+	use::proxying
+	protocol::{irc,jabber,msn-messenger,oscar,yahoo-messenger}
+	uitoolkit::glut
+	admin::{automation,cluster,configuring,package-management}
+	works-with-format::{iso9660,mp3,oggvorbis,wav}
+	admin::{cluster,configuring,filesystem,kernel}
+	devel::{doc,lang:java,library,runtime}
+	devel::testing-qa
+	protocol::{dns,imap,pop3,smtp}
+	devel::{docsystem,lang:c,lang:c++}
+	mail::{delivery-agent,filters,notification}
+	use::{browsing,organizing,searching}
+	works-with::{archive,audio,video}
+	use::{comparing,organizing,viewing}
+	devel::{code-generator,lang:c,lang:c++}
+	sound::{midi,mixer,player,recorder}
+
+csx-process
+
+cultural-systems
+
+current-development-stack
+
+cyber-defense-advocate
+	interface::commandline
+	role::program
+
+cyc-common
+
+cyc-doc
+	role::documentation
+
+cyc-mode
+	implemented-in::lisp
+	use::editing
+	role::plugin
+	suite::emacs
+
+cyc-planning
+	role::program
+
+cyc-tutorial
+	role::program
+
+cycl-to-nl
+	role::app-data
+
+cyclone
+
+cyclone-rule-editor
+	role::program
+
+daniels-ais
+
+darkuranium-systems
+
+data-integration
+	interface::commandline
+	role::program
+
+data-manager
+
+datalog-to-gdl
+
+dates
+
+daydreamer-frdcsa
+
+debconf-2020
+
+debconf-2021
+
+debian-packaging-tut
+
+debian-release-manager
+	suite::debian
+	role::program
+
+debian-rulebase
+	interface::commandline
+
+debt-manager
+
+decision-support-system
+	x11::application
+	interface::x11
+	scope::utility
+	role::program
+
+deduplication
+	role::program
+
+defeasible-prolog
+	role::program
+
+definition-extraction
+	role::program
+	x11::application
+	interface::x11
+
+deontics
+	role::program
+	interface::commandline
+
+dialog-interface
+	interface::commandline
+	scope::utility
+	role::program
+
+dialog-move-ontology
+	role::program
+
+diamond
+	role::app-data
+	scope::utility
+	role::program
+
+digilib
+	role::program
+	scope::utility
+
+digilib-agent
+	role::program
+
+diplomacy
+	role::program
+
+disaster-emergency-survival-preparedness
+	role::program
+
+disciple
+	role::program
+
+discipline-system
+	role::program
+
+discourse-representation
+
+disinform
+	scope::utility
+	role::program
+	interface::commandline
+
+distributed-scraper
+	role::program
+
+dmiles-agi-bot
+	interface::commandline
+	scope::utility
+	role::program
+
+dmiles-systems
+
+dms-formalog
+	role::program
+
+dnd
+
+dnfct-frdcsa
+	role::program
+
+do
+	interface::x11
+
+do-convert
+	role::program
+	interface::x11
+
+document-understanding-system
+
+document-workflow-system
+	role::program
+
+documentary-generator
+	role::program
+
+documentation-central
+	role::documentation
+
+download-auditing
+	role::program
+
+drivers-education-and-safety-training
+	role::program
+
+e-government
+
+e-health-clinic
+	interface::commandline
+	role::program
+	scope::utility
+
+e2c-frdcsa
+	role::program
+
+e2c-opencyc-export-tools
+	role::program
+
+eclipse-prolog
+	role::program
+
+elderly-affairs-management
+	role::program
+
+electrofriend
+	role::program
+
+elle-ethical-consumer
+	role::program
+
+elog2
+	role::program
+
+emacs-agent
+	role::plugin
+	implemented-in::lisp
+	use::editing
+	suite::emacs
+
+emacs-dungeons-and-dragons
+	suite::emacs
+	role::plugin
+	use::editing
+	implemented-in::lisp
+
+emacs-kb-atp
+	interface::text-mode
+	devel::lang:lisp
+	suite::emacs
+	devel::interpreter
+	implemented-in::lisp
+
+emacs-nlp
+	implemented-in::lisp
+	suite::emacs
+
+emacs-poetry-mode
+	role::program
+	use::editing
+	implemented-in::lisp
+	role::plugin
+	suite::emacs
+	interface::commandline
+
+email-prioritization-and-urgency-routing
+	role::program
+	interface::x11
+
+email2speech
+	interface::commandline
+	role::program
+
+ems
+	role::program
+
+encoder
+	role::program
+
+ender
+	implemented-in::tcl
+	role::program
+	game::board:chess
+	devel::debugger
+	use::gameplaying
+
+entertainment-center
+	role::program
+	interface::commandline
+
+entertainment-ideas
+	interface::commandline
+	role::program
+
+entity-database
+	interface::commandline
+	role::program
+
+entity-resolution
+	interface::commandline
+	scope::utility
+	role::program
+
+entity-typing
+	role::program
+
+epistemic-planning
+	role::program
+
+ethical-consumer-system
+
+ethical-systems-analysis
+	role::program
+	interface::commandline
+
+etiquette-guide
+	role::program
+
+eurisko-frdcsa
+	role::program
+
+eurisko-resources
+	role::documentation
+
+evangelist
+
+event-calculus
+	interface::commandline
+	role::program
+
+event-extractor
+	role::program
+	works-with::text
+
+event-log
+
+event-system
+	field::mathematics
+	implemented-in::c++
+	role::plugin
+	role::program
+	special::meta
+	interface::3d
+	game::puzzle
+	use::timekeeping
+	devel::{docsystem,lang:c,lang:c++}
+	scope::utility
+	x11::application
+	interface::daemon
+	role::metapackage
+	use::searching
+	use::gameplaying
+	role::dummy
+	devel::{interpreter,library,runtime}
+	interface::text-mode
+	use::viewing
+
+executable-actionable-notes
+	x11::application
+	interface::x11
+
+execution-engine
+	role::program
+
+executive-function-decision-tree
+	role::program
+
+fact-extraction
+	role::program
+	interface::commandline
+
+factionary
+	role::program
+
+factored-planning
+	role::program
+
+falcon
+	role::program
+
+family-meetings
+	role::program
+
+faq-builder
+	role::program
+
+faster-apt-file
+	role::program
+
+fcms
+	role::program
+
+fe2c
+	web::cms
+	admin::logging
+	role::program
+	devel::library
+	scope::utility
+	use::converting
+	use::chatting
+	protocol::irc
+
+federated-agents
+	role::program
+
+feshell
+
+fgoal
+	interface::commandline
+
+fieldgoal
+	role::program
+
+file-organizer
+	role::program
+	scope::utility
+
+file-sanitizer
+
+financial-decision-support-system
+	role::program
+
+fitness-manager
+
+fletcher
+	scope::utility
+
+flora-to-prolog
+	interface::commandline
+	scope::utility
+	works-with::text
+
+flowchart-generator
+
+flp-advocacy
+	role::program
+	interface::commandline
+
+flp-cordova
+	role::program
+	suite::apache
+
+flp-demo-release
+	scope::utility
+	role::program
+	interface::commandline
+
+flp-mojolicious
+
+flp-pddl
+	interface::commandline
+	role::program
+
+flp-tests
+	interface::commandline
+	scope::utility
+
+flp-toy
+
+flp2
+
+fluent-editor
+
+flux-dmiles
+	interface::commandline
+	role::program
+
+flux-frdcsa
+
+flux-resources
+	role::program
+
+fmea
+	role::program
+	interface::commandline
+
+folksonomy
+	role::program
+
+food-ontology
+	devel::docsystem
+	devel::{debugger,editor,ide,lang:python,lang:ruby}
+	protocol::snmp
+	hardware::input:mouse
+	culture::{dutch,french,spanish,swedish}
+	devel::{lang:c,library,testing-qa}
+	use::storing
+	web::appserver
+	use::{downloading,storing,synchronizing}
+	devel::{buildtools,debugger,lang:ecmascript}
+	role::app-data
+	admin::user-management
+	network::server
+	use::{converting,downloading,organizing}
+	use::dialing
+	implemented-in::python
+	devel::{code-generator,interpreter,lang:c}
+	works-with-format::{iso9660,mp3,oggvorbis}
+	office::finance
+	implemented-in::{c,perl,shell}
+	works-with::db
+	admin::cluster
+	works-with::people
+	security::antivirus
+	uitoolkit::{gtk,ncurses,sdl}
+	devel::{code-generator,lang:c,lang:c++,lang:haskell,lang:java}
+	use::login
+	protocol::voip
+	use::entertaining
+	works-with::{archive,audio,file,image,text}
+	protocol::{ipv6,smtp,ssl}
+	protocol::{irc,jabber,msn-messenger,oscar,ssl,yahoo-messenger}
+	implemented-in::ada
+	works-with::fax
+	devel::{debugger,interpreter,lang:lisp,runtime}
+	network::{client,server,service}
+	interface::x11
+	mail::{delivery-agent,smtp,transport-agent}
+	field::geography
+	suite::samba
+	works-with-format::html
+	made-of::data:audio
+	x11::application
+	field::religion
+	interface::daemon
+	admin::{configuring,filesystem,kernel}
+	protocol::jabber
+	works-with::image:vector
+	protocol::nntp
+	devel::lang:ruby
+	uitoolkit::wxwindows
+	use::{editing,organizing,searching}
+	devel::{compiler,debugger,interpreter,lang:lisp,library}
+	protocol::{ip,tcp,udp}
+	suite::kde
+	implemented-in::{lisp,perl,tcl}
+	interface::svga
+	hardware::storage:floppy
+	works-with-format::{html,info,man}
+	admin::{cluster,configuring,file-distribution,filesystem,monitoring}
+	works-with::{3dmodel,software:running,video}
+	devel::{compiler,debugger,lang:java}
+	web::blog
+	use::printing
+	devel::library
+	works-with::{archive,audio,video}
+	accessibility::speech
+	uitoolkit::gtk
+	uitoolkit::sdl
+	admin::{backup,boot,filesystem,hardware}
+	devel::{code-generator,lang:c,lang:c++}
+	junior::arcade
+	admin::automation
+	works-with::text
+	culture::spanish
+	game::typing
+	admin::recovery
+	works-with::{db,mail,software:package}
+	sound::{midi,mixer,player,recorder}
+	sound::player
+	x11::applet
+	web::wiki
+	hardware::input:keyboard
+	use::{converting,editing,text-formatting}
+	scope::utility
+	admin::boot
+	uitoolkit::athena
+	field::arts
+	devel::lang:sql
+	hardware::power:ups
+	role::source
+	protocol::fidonet
+	network::load-balancing
+	devel::{doc,interpreter,lang:lisp}
+	suite::emacs
+	hardware::storage:cd
+	accessibility::screen-reader
+	mail::{delivery-agent,filters,notification}
+	implemented-in::c
+	works-with::audio
+	suite::netscape
+	devel::{debian,lang:sql,testing-qa}
+	suite::{gnome,gnustep,kde}
+	filetransfer::smb
+	devel::i18n
+	protocol::{http,ldap,webdav}
+	hardware::{input:keyboard,laptop,power,power:acpi}
+	works-with-format::{iso9660,tar,zip}
+	works-with-format::{mp3,mpc,oggvorbis}
+	game::puzzle
+	game::simulation
+	devel::{debian,doc,packaging}
+	use::scanning
+	protocol::ssh
+	hardware::opengl
+	role::program
+	works-with::{audio,image,image:raster}
+	use::editing
+	implemented-in::{c,c++,python}
+
+formalforum
+	works-with::text
+
+formalization-of-large-deviations
+	role::program
+
+formalize
+
+formalog
+
+formalog-jpl
+	role::program
+
+formalog-pengines
+	role::program
+	scope::utility
+	network::server
+
+formalog-template
+	suite::emacs
+
+frame-based-system
+	interface::commandline
+
+framenet-to-ikl
+
+fraud-detection
+	role::program
+
+frd
+	role::program
+	devel::library
+	interface::x11
+
+frdcsa-1.1
+	role::program
+
+frdcsa-1.5
+	interface::x11
+	role::program
+
+frdcsa-2.0
+
+frdcsa-at-home
+	role::program
+
+frdcsa-browser-extensions
+	role::program
+
+frdcsa-bug-tracking
+	role::program
+
+frdcsa-dashboard
+	role::program
+
+frdcsa-el
+	suite::emacs
+	implemented-in::lisp
+	role::plugin
+
+frdcsa-installer
+	role::program
+
+frdcsa-reference
+	role::program
+
+frdcsal
+	role::program
+
+free-knext
+	role::program
+
+free-life-planner
+	x11::application
+
+free-logic-form
+	works-with::logfile
+	use::timekeeping
+	scope::utility
+	role::program
+	devel::code-generator
+	special::meta
+	game::puzzle
+	network::server
+	works-with-format::html
+	protocol::http
+	use::converting
+	implemented-in::haskell
+	devel::lang:haskell
+
+free-rte
+	role::program
+
+free-wopr
+	role::program
+
+free-wordseye
+	role::program
+
+freekbs
+	scope::utility
+
+freekbs2
+	scope::utility
+
+friend-finder
+	role::program
+
+full-planner
+	role::program
+
+fweb
+	role::program
+	role::devel-lib
+	implemented-in::php
+
+fweb-translate
+	works-with::text
+	works-with-format::html
+	role::app-data
+
+fweb2
+	role::program
+
+game-time
+	role::program
+
+genealogy-system
+	role::program
+
+generix
+	role::program
+
+get-help
+	role::program
+
+golden-retriever
+	role::program
+
+google-summer-of-code-application
+	role::program
+
+gourmet
+	scope::application
+	protocol::{ipv6,smtp,ssl}
+	mail::{delivery-agent,smtp,transport-agent}
+	role::program
+	works-with-format::oggvorbis
+	implemented-in::c
+
+gourmet-formalog
+	role::program
+
+gourmet2
+	role::program
+
+gourmetjr
+	role::program
+
+grant-manager
+	role::program
+
+greenhouse-management
+	implemented-in::c
+	use::editing
+	role::program
+	scope::utility
+	x11::application
+	interface::x11
+
+grocery-bill-splitter
+	role::program
+
+hal
+	role::program
+
+handwriting-recognition
+	role::program
+
+historian
+	role::program
+
+home-automation
+	role::program
+
+house-rules
+	role::program
+
+iaec
+
+icodebase-testing
+	role::program
+
+id-card-creator
+	role::program
+
+idiom-database
+	role::program
+
+iem
+
+ies
+	role::program
+
+infolab
+	role::program
+
+interactive-execution-monitor
+
+internet-research-tool
+	role::program
+
+interrelator
+
+ipvord
+	role::program
+
+irc-kb
+
+its
+	role::program
+
+jess-debugger
+	scope::utility
+	role::program
+	interface::commandline
+
+job-search
+	x11::application
+	interface::daemon
+	devel::{editor,lang:c,lang:c++,lang:java,lang:perl}
+	role::program
+	implemented-in::c
+	scope::utility
+
+js-application-agent
+	role::program
+	use::editing
+
+js-form-filler
+	role::program
+
+js-rapid-response
+	role::program
+
+js-rapid-response-backup
+	role::program
+
+js-rapid-response-old
+	role::program
+
+js-rapid-response-web
+	role::program
+
+kbfs
+	role::program
+
+kbfs2
+	role::program
+
+kmax
+	use::editing
+	implemented-in::lisp
+	implemented-in::c
+	role::plugin
+	suite::emacs
+	devel::lang:lisp
+
+kmax-object-manipulation-system
+	implemented-in::lisp
+	role::plugin
+	suite::emacs
+
+language-learning
+	role::program
+
+larkc-cl
+	role::program
+
+learner
+
+lessons-learned
+	role::program
+
+license-manager
+	role::program
+
+link-checker
+	role::program
+
+linux-media-acquisition
+	role::program
+
+list-of-lists
+	role::program
+	scope::utility
+	interface::commandline
+
+location-logic
+	role::program
+
+log-analysis
+	role::program
+
+logic-form-to-nl-generation
+	role::program
+
+logicmoo-frdcsa
+	role::program
+
+maintenance-system
+	role::program
+
+manager
+	network::{client,server,service}
+	x11::application
+	devel::debugger
+	implemented-in::c
+	role::program
+	uitoolkit::qt
+	uitoolkit::gtk
+	scope::utility
+
+mantra
+	interface::commandline
+	scope::utility
+
+market-analyzer
+	role::program
+
+market-researcher
+	role::program
+
+marketing-manager
+	role::program
+
+mass-service-registration
+	role::program
+
+mathematical-knowledge-management
+
+mdr
+	role::app-data
+
+media-library
+	role::program
+
+meeting
+	role::program
+
+mental-benchmarks
+	role::program
+
+menu-annotator
+	role::program
+
+metasite-extractor
+
+metaverse
+	role::program
+
+minor-source-hatchery
+
+miscellaneous-games
+	use::gameplaying
+
+mmi
+	role::program
+	uitoolkit::gtk
+	scope::utility
+	interface::x11
+	x11::application
+
+model-based-problem-solver
+	role::program
+
+monitoring-agent
+	role::program
+
+movie-recommendation
+	role::program
+
+mush
+	uitoolkit::ncurses
+	suite::debian
+	protocol::irc
+	interface::text-mode
+	implemented-in::python
+	role::program
+	admin::configuring
+	works-with::software:source
+	scope::utility
+	uitoolkit::qt
+
+music-composition-system
+	role::program
+
+music-control-system
+
+musical-system
+	role::program
+
+myfrdcsa
+	role::program
+
+news-monitor
+	role::program
+
+nl-to-fol
+	role::program
+
+nl-to-pddl
+	role::program
+
+nlu
+	role::program
+
+nlu-irish
+	role::program
+
+nlu-mf
+	role::program
+
+nooks-and-crevices
+
+notification-manager
+	role::program
+
+object-recognition
+	role::program
+	interface::x11
+	x11::application
+
+ocra
+	interface::x11
+
+ofcs
+	role::program
+
+openoffice-gramadoir-integration
+	role::program
+
+option-classifier
+	role::program
+	interface::commandline
+
+ossmole-assistant
+	role::program
+
+package-installation-manager
+	implemented-in::c
+
+package-priority-queue
+	role::program
+
+packager
+	use::{organizing,searching,storing}
+	devel::{buildtools,code-generator,lang:perl}
+	use::filtering
+	devel::{debugger,editor,ide,lang:python,lang:ruby}
+	devel::{doc,lang:c,lang:c++}
+	web::appserver
+	works-with::{file,image,image:vector}
+	culture::chinese
+	hardware::{laptop,power,power:acpi,power:apm,power:ups}
+	devel::{buildtools,doc,lang:python}
+	devel::{editor,lang:c,lang:c++,lang:java,lang:perl}
+	protocol::{ipv6,smtp,ssl}
+	role::{documentation,dummy,metapackage}
+	mail::{delivery-agent,smtp,transport-agent}
+	devel::{debugger,interpreter,lang:lisp,runtime}
+	scope::suite
+	devel::{compiler,debugger,interpreter,lang:lisp,library}
+	interface::svga
+	implemented-in::fortran
+	sound::{midi,mixer,player,recorder}
+	use::{browsing,organizing,searching}
+	devel::{interpreter,lang:java,runtime}
+	works-with::{archive,audio,video}
+	protocol::{imap,nntp,ssl}
+	accessibility::screen-reader
+	admin::{hardware,monitoring,power-management}
+	protocol::{irc,jabber,msn-messenger,oscar,yahoo-messenger}
+	devel::{doc,lang:java,library,runtime}
+	scope::utility
+	game::mud
+	admin::{filesystem,kernel,monitoring}
+	use::{converting,searching,viewing}
+
+packager-agent
+
+panoply-release-manager
+	interface::commandline
+	scope::utility
+	role::program
+
+paperless-office
+	scope::utility
+
+paralegal
+	role::program
+
+parking-system
+	role::program
+	scope::utility
+
+password-manager
+	role::program
+
+perform
+
+perl6-stdlib
+	devel::lang:lisp
+	implemented-in::lisp
+	devel::library
+
+perllib
+
+personal-adaptive-filtering
+
+pgourmet
+	culture::italian
+	protocol::http
+	devel::prettyprint
+	devel::buildtools
+	filetransfer::http
+	works-with::pim
+	culture::polish
+	works-with::music-notation
+	works-with::image:raster
+	devel::{ide,interpreter,lang:scheme}
+	use::storing
+	role::app-data
+	filetransfer::ftp
+	admin::package-management
+	implemented-in::python
+	mail::filters
+	admin::backup
+	uitoolkit::wxwidgets
+	works-with::image
+	works-with::mail
+	role::shared-lib
+	admin::filesystem
+	culture::japanese
+	works-with-format::tex
+	implemented-in::perl
+	devel::{code-generator,docsystem,lang:c}
+	devel::code-generator
+	use::editing
+	junior::games-gl
+	network::service
+	devel::interpreter
+	uitoolkit::sdl
+	suite::gnu
+	works-with::text
+	field::biology:bioinformatics
+	use::compressing
+	devel::testing-qa
+	admin::configuring
+	use::timekeeping
+
+plan-recognizer
+	role::program
+
+planlogic-frdcsa
+
+posi
+	role::program
+	interface::x11
+	interface::commandline
+
+positional-analysis
+	role::program
+
+poverty-survival-system
+	role::program
+
+problem-monitor
+	role::program
+
+problemspace
+	role::plugin
+	devel::debugger
+	protocol::{ipv6,smtp,ssl}
+	mail::{delivery-agent,smtp,transport-agent}
+
+profession-agent-factory
+	role::program
+
+prolog-agent
+	role::program
+	scope::utility
+	devel::{doc,examples,interpreter,lang:c}
+
+prolog-prolog-parser
+	role::program
+
+prologmud-frdcsa
+
+prologmud-i7-frdcsa
+	interface::commandline
+	role::program
+
+pse
+	scope::utility
+	role::program
+
+pse-x
+	role::program
+
+pse2
+	role::program
+
+pverber
+	scope::utility
+	role::program
+	interface::commandline
+
+quac
+	role::program
+	scope::utility
+	security::authentication
+	interface::daemon
+	implemented-in::shell
+	implemented-in::python
+	network::server
+
+radar
+	devel::interpreter
+	admin::login
+	works-with::{archive,audio,video}
+	web::browser
+	use::printing
+	works-with-format::pdf
+	admin::automation
+	implemented-in::tcl
+	scope::utility
+	works-with-format::zip
+	admin::boot
+	devel::{lang:lisp,library,testing-qa}
+	devel::testing-qa
+	devel::lang:ada
+	protocol::{irc,jabber,msn-messenger,oscar,yahoo-messenger}
+	filetransfer::dcc
+	admin::configuring
+	devel::examples
+	works-with::archive
+	special::obsolete
+	use::checking
+	works-with::software:package
+	devel::{buildtools,debian,testing-qa}
+	devel::{lang:c,lang:c++,profiler}
+	role::plugin
+	use::proxying
+	security::integrity
+	admin::virtualization
+	devel::bugtracker
+	implemented-in::ocaml
+	implemented-in::lisp
+	devel::{buildtools,debian,packaging}
+	implemented-in::perl
+	use::{converting,searching,viewing}
+	use::{checking,editing,synchronizing}
+	works-with::software:running
+	role::app-data
+	hardware::{storage,storage:cd,storage:dvd}
+	devel::docsystem
+	admin::{boot,configuring,filesystem,hardware,kernel,recovery}
+	devel::{lang:c,library,testing-qa}
+	devel::{buildtools,code-generator,lang:perl}
+	use::{organizing,searching,storing}
+	admin::cluster
+	filetransfer::ftp
+	admin::package-management
+	made-of::data:xml
+	implemented-in::python
+	interface::shell
+	devel::{buildtools,doc,library}
+	made-of::data:man
+	devel::{debian,packaging,testing-qa}
+	admin::hardware
+	admin::backup
+	interface::commandline
+	devel::{interpreter,lang:lisp,library}
+	use::routing
+	protocol::irc
+	scope::suite
+	implemented-in::ada
+	mail::{delivery-agent,smtp,transport-agent}
+	use::converting
+	suite::debian
+	protocol::{ipv6,smtp,ssl}
+	devel::debugger
+	works-with::file
+	works-with::font
+	works-with::bugs
+	devel::{buildtools,doc,lang:python}
+	hardware::modem
+	devel::{i18n,runtime,testing-qa}
+	devel::{ide,rcs,testing-qa}
+	security::cryptography
+	devel::{compiler,debian,lang:lisp,packaging}
+	devel::{compiler,debugger,interpreter,lang:lisp,library}
+	protocol::ftp
+
+raiders-of-the-ftp-sites
+
+reading-analyzer
+	role::program
+	interface::commandline
+
+reading-comprehension
+	role::program
+
+reasonbase
+	devel::{compiler,debugger,interpreter,lang:lisp,library}
+	admin::{configuring,filesystem,kernel}
+	devel::{buildtools,doc,lang:python}
+	devel::{debugger,interpreter,lang:lisp,runtime}
+	mail::{delivery-agent,smtp,transport-agent}
+	role::{documentation,dummy,metapackage}
+	protocol::{ipv6,smtp,ssl}
+	devel::{interpreter,lang:lisp,library}
+	use::{organizing,searching,storing}
+	devel::{debugger,editor,ide,lang:python,lang:ruby}
+	role::program
+	security::ids
+	game::puzzle
+	devel::{doc,examples,interpreter,lang:c}
+	protocol::{irc,jabber,msn-messenger,oscar,yahoo-messenger}
+	devel::lang:ocaml
+	use::{browsing,organizing,searching}
+
+receipt-manager
+	role::program
+
+recommender-system
+	role::program
+
+recovery-frdcsa
+	role::program
+
+release-to-github
+	role::plugin
+
+requirements-optimization
+	role::program
+
+research-ontology
+	role::program
+
+resource-manager
+	role::program
+
+resource-reservation-system
+	role::program
+
+restaurant-music-system
+	role::program
+
+resume-critic
+	role::program
+
+reward-ontology
+	role::program
+
+rights-web
+	role::program
+
+robotic-book-scanner
+	role::program
+
+rsr
+	role::program
+
+rte
+	role::program
+
+rwhois
+	role::program
+
+safe
+	role::program
+	interface::commandline
+
+samwise
+	interface::commandline
+	scope::utility
+
+sanctus
+	interface::x11
+	use::storing
+	role::program
+
+savant
+	scope::utility
+	role::program
+	x11::application
+
+save-tara
+	role::program
+	interface::x11
+
+sayer
+	interface::commandline
+	scope::utility
+	role::program
+
+sayer-learner
+
+schizophrenai
+	role::program
+
+score
+	role::program
+
+scrubber
+	role::program
+	interface::commandline
+
+seeker
+	role::program
+	interface::commandline
+
+sensor-network
+	role::program
+
+setanta
+	interface::commandline
+	devel::{lang:lisp,library,ui-builder}
+	security::ids
+	role::program
+	scope::utility
+	admin::automation
+
+setanta-agent
+	implemented-in::c
+	role::program
+
+setanta-client
+	network::client
+	role::program
+	x11::application
+
+shops
+	security::ids
+	use::scanning
+	works-with-format::mp3
+	works-with-format::oggvorbis
+	role::program
+	web::cms
+	implemented-in::c
+	scope::utility
+	scope::application
+	mail::{delivery-agent,smtp,transport-agent}
+	protocol::{ipv6,smtp,ssl}
+	admin::filesystem
+	interface::commandline
+	works-with::software:running
+	mail::filters
+
+silo
+	scope::utility
+	role::program
+	interface::commandline
+
+sinless
+	interface::text-mode
+	role::program
+	scope::utility
+
+situated-agent-attempts
+	role::program
+	interface::commandline
+
+skme
+	role::program
+
+socbot
+	role::program
+
+social-intelligence
+	role::program
+
+social-media-presence
+	scope::utility
+	role::program
+	interface::commandline
+
+social-recreational-game-playing-and-development
+	role::program
+
+software-evaluator
+	role::program
+
+software-finder
+	implemented-in::c-sharp
+	security::firewall
+	implemented-in::shell
+	hardware::video
+	works-with::font
+	interface::{commandline,text-mode,web}
+	devel::{docsystem,lang:c++,lang:perl}
+	suite::samba
+	hardware::storage:dvd
+	implemented-in::fortran
+	devel::{compiler,debian,lang:lisp,packaging}
+	devel::{compiler,debugger,interpreter,lang:lisp,library}
+	works-with-format::xml
+	works-with::{image,image:raster,image:vector}
+	mail::smtp
+	uitoolkit::wxwindows
+	works-with::image:vector
+	security::cryptography
+	works-with-format::{iso9660,mp3,oggvorbis}
+	mail::filters
+	admin::cluster
+	works-with::db
+	network::server
+	devel::{code-generator,interpreter,lang:c}
+	implemented-in::python
+	devel::{buildtools,doc,library}
+	works-with::{file,image,image:vector}
+	devel::ecma-cli
+	biology::{format:aln,nuceleic-acids,peptidic}
+	works-with::image:raster
+	use::filtering
+	hardware::input:mouse
+	use::storing
+	use::entertaining
+	devel::{packaging,rcs,testing-qa}
+	role::shared-lib
+	interface::commandline
+	web::application
+	network::firewall
+	use::login
+	works-with::{file,mail,pim}
+	use::{downloading,monitor,storing}
+	use::configuring
+	admin::{automation,logging,monitoring}
+	admin::backup
+	role::{devel-lib,program,shared-lib}
+	game::mud
+	use::proxying
+	works-with-format::iso9660
+	admin::{backup,file-distribution,filesystem,recovery}
+	security::integrity
+	filetransfer::smb
+	devel::{debian,lang:sql,testing-qa}
+	devel::{compiler,interpreter,lang:scheme}
+	works-with::archive
+	protocol::{http,imap,ssl}
+	culture::taiwanese
+	implemented-in::c
+	protocol::{imap,pop3,ssl}
+	works-with-format::{html,plaintext,postscript,tex}
+	interface::web
+	devel::{lang:c,lang:c++,lang:fortran}
+	implemented-in::ruby
+	devel::modelling
+	use::{scanning,synchronizing,viewing}
+	admin::{filesystem,kernel,monitoring}
+	role::program
+	devel::{doc,examples,lang:haskell}
+	made-of::{data:html,data:pdf,data:tex}
+	use::{downloading,proxying,storing}
+	protocol::atm
+	protocol::ssh
+	implemented-in::ocaml
+	devel::{code-generator,lang:c++,lang:java}
+	works-with-format::{mp3,mpc,oggvorbis}
+	security::log-analyzer
+	admin::recovery
+	works-with::logfile
+	works-with::{db,mail,software:package}
+	works-with-format::pdf
+	works-with-format::tar
+	admin::automation
+	admin::login
+	works-with::{archive,audio,video}
+	uitoolkit::gtk
+	works-with-format::xml:rss
+	hardware::storage
+	use::{converting,editing,organizing,printing,searching,storing,synchronizing,text-formatting,viewing}
+	use::{converting,printing,text-formatting}
+	web::blog
+	works-with-format::svg
+	works-with-format::{html,plaintext,postscript}
+	use::printing
+	use::{checking,monitor,proxying}
+	hardware::storage:cd
+	security::{authentication,firewall,ids,log-analyzer}
+	implemented-in::php
+	protocol::radius
+	protocol::{ftp,http,ipv6,kerberos,ldap,ssl}
+	network::load-balancing
+	works-with::{db,mail,pim}
+	hardware::{laptop,power,power:acpi,power:apm}
+	protocol::{ftp,ipv6,ssl}
+	devel::examples
+	devel::{lang:c,lang:c++,lang:java,prettyprint}
+	devel::{debian,doc,library}
+	devel::{docsystem,lang:c,lang:c++}
+	uitoolkit::athena
+	admin::boot
+	scope::utility
+	use::compressing
+	devel::lang:sql
+	devel::lang:ada
+	devel::{buildtools,lang:c,lang:c++}
+	works-with::{bugs,software:package,software:source}
+	devel::{buildtools,debugger,lang:c,lang:scheme}
+
+software-indexer
+	role::program
+
+software-ontology
+	role::program
+
+source-hatchery
+	role::program
+
+special-lug-admin
+	interface::x11
+	role::program
+
+spider
+
+spreading-activation-package-search
+	interface::commandline
+	role::program
+	scope::utility
+
+spse
+	role::program
+	interface::commandline
+
+spse2-formalog
+	role::program
+
+story-teller
+	role::program
+
+study
+
+study-memorization-subsystem
+	role::program
+
+suppose-suppose
+	role::program
+
+suppositional-decomposer
+	role::program
+
+suppositional-reasoner
+	role::program
+
+svre
+	role::program
+
+svrs
+	role::program
+	x11::application
+	interface::x11
+	interface::commandline
+
+symbiosis
+	interface::commandline
+	role::program
+
+system
+
+system-ie
+
+system-implementor
+	role::program
+
+system-iterator
+	role::program
+	scope::utility
+	interface::commandline
+
+system-recommender
+	interface::commandline
+	works-with::db
+	network::server
+	role::program
+	implemented-in::c
+
+systemx
+	role::program
+
+task-manager
+	scope::utility
+	uitoolkit::gtk
+	role::program
+	suite::gnome
+	interface::x11
+	x11::application
+
+task-tagging-system
+	role::program
+
+task1
+	role::program
+
+tdt
+	interface::commandline
+	role::program
+
+temp-agency-locator
+	role::program
+
+termios
+	role::program
+
+terms-and-conditions-analyzer
+	role::program
+
+text-analyzer
+	role::program
+
+the-frdcsa-book
+	admin::user-management
+	interface::commandline
+	devel::{interpreter,lang:lisp,library}
+	devel::debugger
+	role::{documentation,dummy,metapackage}
+	implemented-in::haskell
+	devel::{doc,examples,interpreter,lang:c}
+	scope::utility
+	role::program
+	security::ids
+
+thinker
+	devel::{doc,examples,interpreter,lang:c}
+	scope::utility
+	devel::{doc,lang:java,library,runtime}
+	protocol::{irc,jabber,msn-messenger,oscar,yahoo-messenger}
+	protocol::ident
+	admin::automation
+	devel::{interpreter,lang:java,runtime}
+	role::program
+	special::meta
+	use::{downloading,proxying,storing}
+	admin::{filesystem,monitoring,package-management}
+	filetransfer::smb
+	interface::commandline
+	devel::ui-builder
+	use::{organizing,searching,storing}
+	devel::{buildtools,code-generator,lang:perl}
+	implemented-in::{c,perl,shell}
+	sound::speech
+	devel::{interpreter,library,runtime}
+	web::appserver
+	works-with::{file,image,image:vector}
+	devel::{doc,lang:c,lang:c++}
+	mail::delivery-agent
+	devel::{ide,interpreter,lang:scheme}
+	use::filtering
+	devel::{lang:lisp,library,ui-builder}
+	implemented-in::fortran
+	interface::svga
+	devel::{compiler,debugger,interpreter,lang:lisp,library}
+	devel::debugger
+	implemented-in::shell
+	devel::{editor,lang:c,lang:c++,lang:java,lang:perl}
+	suite::samba
+	devel::{debugger,interpreter,lang:lisp,runtime}
+	mail::{delivery-agent,smtp,transport-agent}
+	role::{documentation,dummy,metapackage}
+	protocol::{ipv6,smtp,ssl}
+
+todo-systems
+	role::program
+
+transport
+	interface::daemon
+	network::server
+	role::program
+	scope::utility
+
+travel-system
+	role::program
+
+twitter-follower-analyzer
+	role::program
+
+unilang
+	use::proxying
+	filetransfer::smb
+	role::program
+	implemented-in::perl
+	x11::application
+	suite::samba
+	mail::{delivery-agent,smtp,transport-agent}
+	implemented-in::python
+
+unilang-message-classifier
+	role::program
+
+vanguard
+	role::program
+
+vanity-search
+	x11::application
+
+various-perl-libraries
+	role::program
+
+verber
+	devel::lang:lua
+	interface::3d
+	game::board:chess
+	role::program
+	implemented-in::c++
+	implemented-in::c
+	devel::{compiler,debugger,interpreter,lang:lisp,library}
+	interface::x11
+	implemented-in::shell
+	devel::{editor,lang:c,lang:c++,lang:java,lang:perl}
+	interface::daemon
+	x11::application
+	devel::{interpreter,lang:lisp,library}
+	devel::lang:c++
+
+virtual-hacklab
+	role::program
+
+vm-manager
+	role::program
+
+vm-release
+	role::program
+
+web-analytics
+	role::program
+
+web-backup
+	works-with-format::html
+	works-with::text
+	role::program
+
+what-to-do
+	scope::utility
+	role::program
+
+windows-power-operating-system
+	role::program
+
+workflow-planning
+	role::program
+
+workhorse
+	interface::x11
+	role::program
+
+world-state-monitor
+	role::program
+
+wow
+	role::program
+
+wsm
+	role::program
+
+xwordnet-utils
+

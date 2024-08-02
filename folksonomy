@@ -1,0 +1,6 @@
+#!/usr/bin/env perl
+
+use Folksonomy;
+
+# my $folk = Folksonomy->new();
+# $folk->Execute;
